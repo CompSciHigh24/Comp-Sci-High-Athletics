@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Task 20: Using EJS add the name to the title--><%for (let i = 0; i< found.length;i++) {%>
+  <title><%=found[i].firstname%></title> 
+  <!-- Task 21: Link to styles.css here -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="navbar" style= "background-color:black">
+       <a class="navbar-brand" href="/" style="color:white">
+         <img src="https://image.maxpreps.io/school-mascot/e/0/e/e0ed04ef-54cc-404c-bb0b-766e0119834c.gif?version=638076292800000000&width=1024&height=1024" width="30" height="30" class="d-inline-block align-top" alt="">
+         Comp Sci High Athletics
+       </a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"style="background-color:white">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
+               Teams
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="/teams/6655feab711c2381c2dd2587">Boys Basketball </a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="/girlsbball">Girls Basketball</a></li>
+
+             </ul>
+           </li>
+
+         </ul>
+       </div>
+     </nav>
+  </header>
+
+  <section class="hero">
+    <!-- Task 22: Using EJS add the name of your item here -->
+    <h1><%=found[i].lastname%></h1>
+  </section>
+
+  <div class="detail-container">
+      <!-- Task 23: Add item's image src here -->
+     
+      <!-- Task 24: Add the rest of details about your item. Add them into p tags-->
+
+      <!-- name -->
+      <p><%=found[i].number%></p>
+      <!-- type -->
+      <p><%=found[i].firstname%></p>
+      <!-- description -->
+      <p><%=found[i].lastname%></p>
+
+  </div>
+        <footer class="footer">
+          <!-- Task 25: Add the item name to the footer. (RETURN to collectionRoutes.js when done.) -->
+            <p>&copy; <%=found[i].firstname%></p>
+          <%  }%>
+        </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

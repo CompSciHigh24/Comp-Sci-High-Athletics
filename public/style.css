@@ -1,0 +1,90 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f0f8f0; /* Light green background */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: #006400; /* Dark green text color */
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #fff; /* White background */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #006400; /* Dark green text color */
+}
+
+input[type="text"],
+input[type="number"],
+button[type="submit"] {
+  width: calc(100% - 18px); /* Subtracting 18px for the input border */
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+button[type="submit"] {
+  background-color: #32cd32; /* Green submit button */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #228b22; /* Dark green hover color */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border: 2px solid #006400; /* Dark green focus border */
+  outline: none;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.card p {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}

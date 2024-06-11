@@ -1,0 +1,302 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/styles.css"></link>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">CSH Athletics</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+  
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Teams
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="boysbball.html">Boys Basketball </a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="girlsbball.html">Girls Basketball</a></li>
+    
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <title></title> 
+
+  <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+
+
+  
+
+  <section class="hero">
+    
+    <h1></h1>
+  </section>
+
+  <div class="detail-container" style= "background-color:black; padding-bottom:10px; padding-top:10px;">
+     
+      <img src="<%= image %>" class="rounded mx-auto d-block">
+      
+
+     
+  </div>
+  <div class="detail-container" style= "background-color:green; padding-top:100px; padding-bottom:100px; font-weight:bold">
+
+      <h1 style="text-align: center">Mission Statement</h1>
+    <p style="text-align: center"><%=missionStatement%></p>
+
+
+
+  </div>
+  </div>
+  <div style= "padding-left:50px; padding-right:50px; padding-top:100px; padding-bottom:50px;">
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active" >
+        <a href="girlsbball.html"><img src="https://uc10c2e0d6ffbd3d6c3d17d94fa0.previews.dropboxusercontent.com/p/thumb/ACS8rOr1olqZ02sUrPk8YD_yK9AP43iGywSmpfvF2VcR30TpPv8MZBivrD_4fNvnXFatyVeIViUu_CAOiltqLF1_4oY_Qct7EONkPclVd92yx2oD1X2ZmRsvppFLSnuDLRJJk2FrYPAulRQ4bq0K7vHE7OIybS-RUcYXHS4FdT59oArBgWiGwDiPMXmJvURmHMKW-LIwOosVzFwIWAhkWF6WtzhFoag0sJ3xzasU_2D6ujaZodP_cyYaYy7alFWwoGKS9fByen12ghNfusncSrPp2WACAQcXoOabEV2lnnqE0aLDKLv1yxOsCn2JPMYnD8e6fLbEmfaPvWzV0VZ7p_mlpcX6zynvAelhJX1y5kquSaaPec488YIstPeVvbBjfdH5xUyUHdbg9t_MZnbvaz-PDJk2NYLsBBlaSkZySsKNY6SL68MPajD9glHChCsFsLgsCKqQzgyZuyUYFoJE7Q0delxZDlUR2y4gfRjbsQI2YcNgMq22PCHMsfl4fh8reTZ46fJBQR1ejbww7u8dxg0GoyRi0pZUWy7DuGmbXExEXP_z3DQQEyUbJlBpKdLsc_CVz9PpuJ26_SRC-e1NHbv9pPV10k9YrTX2N01NWayU_ixXtckfviEG6jS_ApUZMz2wxjEVKwcSPrdQhLiD815V/p.jpeg" class="d-block w-100" alt="HTML tutorial" ></a>
+      </div>
+      
+      <div class="carousel-item">
+        <a href="boysbball.html"><img src="https://uc10c2e0d6ffbd3d6c3d17d94fa0.previews.dropboxusercontent.com/p/thumb/ACS8rOr1olqZ02sUrPk8YD_yK9AP43iGywSmpfvF2VcR30TpPv8MZBivrD_4fNvnXFatyVeIViUu_CAOiltqLF1_4oY_Qct7EONkPclVd92yx2oD1X2ZmRsvppFLSnuDLRJJk2FrYPAulRQ4bq0K7vHE7OIybS-RUcYXHS4FdT59oArBgWiGwDiPMXmJvURmHMKW-LIwOosVzFwIWAhkWF6WtzhFoag0sJ3xzasU_2D6ujaZodP_cyYaYy7alFWwoGKS9fByen12ghNfusncSrPp2WACAQcXoOabEV2lnnqE0aLDKLv1yxOsCn2JPMYnD8e6fLbEmfaPvWzV0VZ7p_mlpcX6zynvAelhJX1y5kquSaaPec488YIstPeVvbBjfdH5xUyUHdbg9t_MZnbvaz-PDJk2NYLsBBlaSkZySsKNY6SL68MPajD9glHChCsFsLgsCKqQzgyZuyUYFoJE7Q0delxZDlUR2y4gfRjbsQI2YcNgMq22PCHMsfl4fh8reTZ46fJBQR1ejbww7u8dxg0GoyRi0pZUWy7DuGmbXExEXP_z3DQQEyUbJlBpKdLsc_CVz9PpuJ26_SRC-e1NHbv9pPV10k9YrTX2N01NWayU_ixXtckfviEG6jS_ApUZMz2wxjEVKwcSPrdQhLiD815V/p.jpeg" class="d-block w-100" alt="HTML tutorial" ></a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+    </div>
+  
+   <div class="detail-container" style= "background-color:black; padding-top:10px; padding-bottom:10px; font-weight:bold">
+
+      <h1 style="text-align: left; font-size:30px"><a href="https://www.compscihigh.org/contact-us" style="">Contact Us</a></h1>
+<img src="https://image.maxpreps.io/school-mascot/e/0/e/e0ed04ef-54cc-404c-bb0b-766e0119834c.gif?version=638076292800000000&width=100&height=100"
+
+
+  </div> 
+  
+        <footer class="footer">
+         
+            <p>&copy; </p>
+        </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
+ -->
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <link rel="stylesheet" href="/styles.css"></link>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+   <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+     <div class="container-fluid">
+       <a class="navbar-brand" href="/">CSH Athletics</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Teams
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="boysbball.html">Boys Basketball </a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="girlsbball.html">Girls Basketball</a></li>
+
+             </ul>
+           </li>
+
+         </ul>
+       </div>
+     </div>
+   </nav>
+ <meta name="viewport" content="width=device-width, initial-scale=1"> --> 
+   <nav class="navbar" style= "background-color:black">
+     <a class="navbar-brand" href="#" style="color:white">
+       <img src="https://image.maxpreps.io/school-mascot/e/0/e/e0ed04ef-54cc-404c-bb0b-766e0119834c.gif?version=638076292800000000&width=1024&height=1024" width="30" height="30" class="d-inline-block align-top" alt="">
+       Comp Sci High Athletics
+     </a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color:white">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <li class="nav-item">
+
+         </li>
+         <li class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
+             Teams
+           </a>
+           <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="/teams/6655feab711c2381c2dd2587">Boys Basketball </a></li>
+             <li><hr class="dropdown-divider"></li>
+             <li><a class="dropdown-item" href="/girlsbball">Girls Basketball</a></li>
+
+           </ul>
+         </li>
+
+       </ul>
+     </div>
+   </nav>
+ <style>
+ body, html {
+   height: 100%;
+   margin: 0;
+   font: 400 15px/1.8 "Lato", sans-serif;
+   color: #777;
+ }
+
+ .bgimg-1, .bgimg-2, .bgimg-3 {
+   position: relative;
+   opacity: 0.65;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+ }
+ .bgimg-1 {
+   background-image: url("https://image.maxpreps.io/school-mascot/e/0/e/e0ed04ef-54cc-404c-bb0b-766e0119834c.gif?version=638076292800000000&width=1024&height=1024");
+   min-height: 100%;
+ }
+
+ .bgimg-2 {
+   background-image: url("img_parallax2.jpg");
+   min-height: 400px;
+ }
+
+ .bgimg-3 {
+   background-image: url("img_parallax3.jpg");
+   min-height: 400px;
+ }
+
+ .caption {
+   position: absolute;
+   left: 0;
+   top: 50%;
+   width: 100%;
+   text-align: center;
+   color: #000;
+ }
+
+ .caption span.border {
+   background-color: #111;
+   color: #fff;
+   padding: 18px;
+   font-size: 25px;
+   letter-spacing: 10px;
+ }
+
+ h3 {
+   letter-spacing: 5px;
+   text-transform: uppercase;
+   font: 20px "Lato", sans-serif;
+   color: #111;
+ }
+
+ /* Turn off parallax scrolling for tablets and phones */
+ @media only screen and (max-device-width: 1024px) {
+   .bgimg-1, .bgimg-2, .bgimg-3 {
+     background-attachment: scroll;
+   }
+ }
+ </style>
+ </head>
+ <body>
+
+ <div class="bgimg-1">
+   <div class="caption">
+   <span class=""></span>
+   </div>
+ </div>
+
+ <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+   <h3 style="text-align:center;">Mission Statement</h3>
+   
+   <p style="text-align:center">The Pythons Basketball Team is Comp Sci High’s oldest team. Led by Coach Johnson and Coach Reardon, who are exemplary mentors for these young men, this tight-knit squad exemplifies the spirit of teamwork and resilience. They practice hard, and they play even harder. Members of the Python team are full of spirit and forge lifelong friendships while also learning valuable lessons.
+ </p>
+ </div>
+
+ 
+
+ 
+   
+      <div style= "padding-left:50px; padding-right:50px; padding-top:100px; padding-bottom:50px;">
+       <div id="carouselExample" class="carousel slide">
+         <div class="carousel-inner">
+           <div class="carousel-item active" >
+             <a href="/girlsbball"><img src="/images/fullteam.jpeg" class="d-block w-100" alt="HTML tutorial" ></a>
+           </div>
+
+           <div class="carousel-item">
+             <a href="/teams/6655feab711c2381c2dd2587"><img src="/images/hype.jpeg" class="d-block w-100" alt="HTML tutorial" ></a>
+           </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+       </div>
+         </div>
+
+   
+ 
+ 
+ <div style="position:relative;">
+   <div style="color:#ddd;background-color:black;text-align:center;padding:50px 80px;text-align: justify;">
+  
+     <div>
+     <img src="https://image.maxpreps.io/school-mascot/e/0/e/e0ed04ef-54cc-404c-bb0b-766e0119834c.gif?version=638076292800000000&width=1024&height=1024" width="70" height="70" class="d-inline-block align-top" alt="">
+     </div>
+     <div>
+      <p>Contact Us</p>
+     </div>
+   </div>
+ </div>
+
+ <div class="bgimg-1">
+   <div class="caption">
+   <span class=""></span>
+   </div>
+ </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  
+ </body>
+ </html>
